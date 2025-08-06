@@ -91,7 +91,7 @@ const drinks = {
       "Eiswürfel"
     ],
     steps: [
-      "Limette heiß abwaschen und in 8 Stücke schneiden",
+      "Limette in 8 Stücke schneiden",
       "Mit Rohrzucker im Glas zerdrücken, bis der Saft austritt",
       "Eiswürfel dazugeben",
       "Mit Ginger Ale auffüllen und genießen"

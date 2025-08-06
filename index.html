@@ -1,30 +1,48 @@
-<!-- index.html -->
 <!DOCTYPE html>
 <html lang="de">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Lime Bar – Summer Cocktails</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Limebar 🍸</title>
   <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
   <header>
-    <h1><img src="img/lime.png" alt="Lime Logo" style="height: 2em; vertical-align: middle;"> Lime Bar</h1>
-    <p>Sommerliche Cocktails & Mocktails für dein BBQ</p>
+    <h1>🍸 Limebar</h1>
   </header>
+
   <main>
     <section>
       <h2>Zapfhahn 🍹</h2>
-      <p>Aus dem Zapfhahn, gibt es besten Cuba Libre.</p>
+      <div class="grid">
+        <div style="background: var(--accent-bg); padding: 1rem; border-radius: 1rem;">
+          <h3>Cuba Libre</h3>
+          <p>Aus dem Zapfhahn gibt es besten Cuba Libre!</p>
+        </div>
+      </div>
     </section>
 
     <section>
       <h2>Cocktails 🍸</h2>
+
+      <h3>🥃 Gin</h3>
       <div class="grid">
         <a href="cocktail.html?drink=gin-tonics">
           <img src="img/gin-tonics.jpg" alt="Diverse Gin Tonics">
           <h3>Diverse Gin Tonics</h3>
         </a>
+        <a href="cocktail.html?drink=gin-rickey">
+          <img src="img/gin-rickey.jpg" alt="Gin Rickey">
+          <h3>Gin Rickey</h3>
+        </a>
+        <a href="cocktail.html?drink=gin-gurke">
+          <img src="img/cucumber-gimlet.jpg" alt="Cucumber Gimlet">
+          <h3>Cucumber Gimlet</h3>
+        </a>
+      </div>
+
+      <h3>🍋 Rum</h3>
+      <div class="grid">
         <a href="cocktail.html?drink=caipirinha">
           <img src="img/caipirinha.jpg" alt="Caipirinha">
           <h3>Caipirinha</h3>
@@ -32,10 +50,6 @@
         <a href="cocktail.html?drink=daiquiri">
           <img src="img/daiquiri.jpg" alt="Daiquiri">
           <h3>Daiquiri</h3>
-        </a>
-        <a href="cocktail.html?drink=gin-rickey">
-          <img src="img/gin-rickey.jpg" alt="Gin Rickey">
-          <h3>Gin Rickey</h3>
         </a>
       </div>
     </section>
@@ -51,11 +65,16 @@
           <img src="img/virgin-caipirinha.jpg" alt="Virgin Caipirinha">
           <h3>Virgin Caipirinha</h3>
         </a>
+        <a href="cocktail.html?drink=knut-hansen-mocktail">
+          <img src="img/knut-hansen.jpg" alt="Knut Hansen alkoholfrei">
+          <h3>Knut Hansen alkoholfrei</h3>
+        </a>
       </div>
     </section>
   </main>
+
   <footer>
-    <p>📱 Scan den QR-Code auf dem Tisch für die Rezepte!</p>
+    <p>Scanne den QR-Code vor Ort, um dein Rezept anzuzeigen 📱</p>
   </footer>
 </body>
 </html>

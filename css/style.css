@@ -1,26 +1,42 @@
+
 /* css/style.css */
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&family=Poppins:wght@400;600&display=swap');
+
+:root {
+  --green: #a8bfa1;
+  --dark-green: #4b5e52;
+  --gold: #d4b866;
+  --bg: #fefdf9;
+  --text: #333;
+  --accent-bg: rgba(212, 184, 102, 0.15);
+  --card-shadow: rgba(212, 184, 102, 0.4);
+}
 
 body {
   margin: 0;
   font-family: 'Poppins', sans-serif;
-  background: #fffef5;
-  color: #333;
+  background: var(--bg);
+  color: var(--text);
   text-align: center;
 }
 
 header {
-  background: linear-gradient(135deg, #c1f7c9, #f6fba2);
-  padding: 1.5rem 1rem;
+  background: var(--accent-bg);
+  padding: 2rem 1rem 1rem;
+  border-bottom: 2px solid var(--green);
 }
 
 h1 {
   margin: 0;
-  font-size: 2rem;
+  font-size: 2.2rem;
+  font-family: 'Playfair Display', serif;
+  color: var(--dark-green);
 }
 
-h2 {
-  margin-top: 2rem;
-  font-size: 1.5rem;
+h2, h3 {
+  color: var(--dark-green);
+  font-weight: 600;
 }
 
 .grid {
@@ -33,28 +49,29 @@ h2 {
 .grid a {
   text-decoration: none;
   color: inherit;
-  background: #e0fbe2;
+  background: var(--green);
   border-radius: 1rem;
   overflow: hidden;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
-  transition: transform 0.2s ease;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .grid a:hover {
   transform: scale(1.02);
+  box-shadow: 0 0 15px var(--card-shadow);
 }
 
 .grid img {
   width: 100%;
   height: auto;
-  border-bottom: 4px solid #c5f8c7;
+  border-bottom: 4px solid var(--accent-bg);
 }
 
 footer {
   margin-top: 2rem;
   padding: 1rem;
   font-size: 0.9rem;
-  background: #f0fff0;
+  background: var(--accent-bg);
 }
 
 ul, ol {
@@ -62,10 +79,31 @@ ul, ol {
   max-width: 500px;
   margin: 1rem auto;
   padding: 0 1rem;
+  line-height: 1.6;
+}
+
+select {
+  font-size: 1rem;
+  padding: 0.5rem 0.75rem;
+  border: 2px solid var(--green);
+  border-radius: 0.5rem;
+  background-color: #fff;
+  color: var(--dark-green);
+  margin-bottom: 1rem;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  transition: all 0.2s ease;
+}
+
+select:hover {
+  border-color: var(--dark-green);
 }
 
 @media (max-width: 600px) {
   .grid {
     grid-template-columns: 1fr;
+  }
+
+  h1 {
+    font-size: 1.8rem;
   }
 }

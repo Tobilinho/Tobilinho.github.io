@@ -91,7 +91,7 @@ const drinks = {
       "Eiswürfel"
     ],
     steps: [
-      "Limette in 8 Stücke schneiden",
+      "Limette heiß abwaschen und in 8 Stücke schneiden",
       "Mit Rohrzucker im Glas zerdrücken, bis der Saft austritt",
       "Eiswürfel dazugeben",
       "Mit Ginger Ale auffüllen und genießen"
@@ -128,6 +128,23 @@ const drinks = {
       "Alkoholfreien Knut Hansen dazugeben",
       "Mit Tonic Water auffüllen",
       "Mit Rosmarin oder Gurke garnieren"
+    ]
+  },
+  "cuba-libre": {
+    name: "Cuba Libre",
+    img: "img/cuba-libre.jpg",
+    scalable: false,
+    ingredients: [
+      "5 cl Rum",
+      "Cola",
+      "1 Limettenspalte",
+      "Eiswürfel"
+    ],
+    steps: [
+      "Eiswürfel in ein Glas geben",
+      "Rum hinzufügen",
+      "Mit Cola auffüllen",
+      "Mit Limettenspalte garnieren"
     ]
   }
 };

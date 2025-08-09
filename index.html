@@ -8,17 +8,19 @@
 </head>
 <body>
   <header>
-    <h1>Limebar</h1>
+    <img src="img/logo.png" alt="Limebar Logo" style="height: 40px; vertical-align: middle; margin-right: 10px;">
+    <h1 style="display: inline;">Limebar</h1>
   </header>
 
   <main>
     <section>
       <h2>Zapfhahn</h2>
       <div class="grid">
-        <div style="background: var(--accent-bg); padding: 1rem; border-radius: 1rem;">
+        <a href="cocktail.html?drink=cuba-libre">
+          <img src="img/cuba-libre.jpg" alt="Cuba Libre">
           <h3>Cuba Libre</h3>
           <p>Aus dem Zapfhahn gibt es besten Cuba Libre!</p>
-        </div>
+        </a>
       </div>
     </section>
 
@@ -57,15 +59,15 @@
     <section>
       <h2>Mocktails</h2>
       <div class="grid">
-        <a href="cocktail.html?drink=ipanema">
+        <a class="mocktail-card" href="cocktail.html?drink=ipanema">
           <img src="img/ipanema.jpg" alt="Ipanema">
           <h3>Ipanema</h3>
         </a>
-        <a href="cocktail.html?drink=virgin-caipirinha">
+        <a class="mocktail-card" href="cocktail.html?drink=virgin-caipirinha">
           <img src="img/virgin-caipirinha.jpg" alt="Virgin Caipirinha">
           <h3>Virgin Caipirinha</h3>
         </a>
-        <a href="cocktail.html?drink=knut-hansen-mocktail">
+        <a class="mocktail-card" href="cocktail.html?drink=knut-hansen-mocktail">
           <img src="img/knut-hansen.jpg" alt="Knut Hansen alkoholfrei">
           <h3>Knut Hansen alkoholfrei</h3>
         </a>
@@ -74,7 +76,6 @@
   </main>
 
   <footer>
-    <p>Scanne den QR-Code vor Ort, um dein Rezept anzuzeigen</p>
   </footer>
 </body>
 </html>
